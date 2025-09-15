@@ -7,10 +7,14 @@ def get_book_text(filepath):
 
 from stats import book_word_count
 
+from stats import book_character_count
+
 def main():
     filepath = "/home/sarge/workspace/github.com/sarge101/bookbot/books/frankenstein.txt"
     text = get_book_text(filepath)
     word_count = book_word_count(text)
+    character_count = book_character_count(text)
     print(f"{word_count} words found in the document")
+    print(character_count)
 
 main()
